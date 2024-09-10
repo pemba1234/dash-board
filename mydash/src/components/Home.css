@@ -1,0 +1,22 @@
+section .card {
+    height:200px;
+    width: 65%;
+}
+
+section .card .text {
+    width:45%;
+}
+
+section .card .inner {
+    font-size: 15px;
+    text-align: justify;
+}
+
+section .card .border{
+    width:100px;
+    font-size: 15px;
+}
+
+.parent .m-2 {
+    width: 80%;
+}
