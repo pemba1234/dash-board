@@ -1,5 +1,5 @@
-import HeroNav from "./HeroNav";
-import AppPage from "./AppPage";
+import HeroNav from "./subcomponents/HeroNav";
+import AppPage from "./subcomponents/AppPage";
 import './Nav.css'
 
 export default function Nav(){
