@@ -17,6 +17,6 @@ section .card .border{
     font-size: 15px;
 }
 
-.parent .m-2 {
-    width: 80%;
+.parent .child {
+    width: 82%;
 }
