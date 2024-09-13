@@ -19,17 +19,14 @@ import {
   faRectangleList,
   faIndent,
   faTableCellsRowUnlock,
-  faCircleArrowRight,
   faCircle,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   return (
     <>
-      <nav
-        className="navbar-expand-lg shadow p-0 bg-white ps-3"
-        id="navbar-toggle"
-      >
+      <nav className="shadow bg-white ps-3 position-fixed pe-1 m-0" id="navbar">
         <div className="hero">
           <div className="d-flex pt-3 pb-3 bg-white mb-5 position-fixed fs-2">
             <div className="me-3 ps-2 text-primary">
@@ -41,24 +38,23 @@ export default function Nav() {
         {/* ----------- Dashboard Accordion ------------- */}
         <div className="accordion" id="Navbar">
           <div className="component mb-3 pt-5">
-            <button onclick="" className="border-0 bg-white">
-              <a
-                className="d-flex align-items-center"
-                data-bs-toggle="collapse"
-                href="#dashboardCollapse"
-                aria-controls="dashboardCollapse"
-              >
-                <div className="text common-style d-flex align-items-center ps-1 pe-3 p-2 border-0 rounded-2">
-                  <div className="icon me-3 ms-3">
-                    <FontAwesomeIcon icon={faHouse} />
-                  </div>
-                  Dashboard
-                  <span className="five bg-danger text-white ms-2">5</span>
-                  <div className="ms-4">
-                    <FontAwesomeIcon icon={faCircleArrowRight} />
-                  </div>
+            <button
+              className="d-flex border-0 bg-white "
+              data-bs-toggle="collapse"
+              href="#dashboardCollapse"
+              aria-controls="dashboardCollapse"
+              id="dash"
+            >
+              <div className="text d-flex align-items-center ps-1 pe-3 p-2 border-0 rounded-2">
+                <div className="icon me-3 ms-3">
+                  <FontAwesomeIcon icon={faHouse} />
                 </div>
-              </a>
+                Dashboard
+                <span className="five bg-danger text-white ms-2">5</span>
+                <div className="arrow ms-3">
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </div>
+              </div>
             </button>
             <div
               className="collapse show"
@@ -114,9 +110,7 @@ export default function Nav() {
                   <FontAwesomeIcon icon={faBorderAll} />
                 </div>
                 Layout
-                <div className="ms-4">
-                  <FontAwesomeIcon icon={faCircleArrowRight} />
-                </div>
+                <div className="ms-4"></div>
               </div>
             </a>
             <div

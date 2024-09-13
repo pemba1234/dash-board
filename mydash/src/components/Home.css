@@ -1,13 +1,8 @@
-section .card {
-    height:200px;
-    width: 65%;
+.card {
+    height:auto;
 }
 
-section .card .text {
-    width:45%;
-}
-
-section .card .inner {
+.inner {
     font-size: 15px;
     text-align: justify;
 }
@@ -17,6 +12,12 @@ section .card .border{
     font-size: 15px;
 }
 
-.parent .child {
-    width: 82%;
+.ms-2 button{
+    display: none;
+}
+
+@media only screen and (max-width: 1260px){
+.ms-2 button{
+        display: block;
+    }
 }

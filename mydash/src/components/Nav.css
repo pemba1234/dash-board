@@ -4,9 +4,8 @@
 
 nav {
     height: 100%;
-    width:270px;
+    width:280px;
     overflow: auto;
-    position: fixed;
 }
 
 .position-fixed {
@@ -65,4 +64,21 @@ a {
     color: rgb(165, 165, 165);
     font-size: 8px;
     margin-bottom: 6.5px;
+}
+
+#dash .text::after{
+    font-family: 'Glyphicons Halflings';
+    content: \e114;
+    float:right;
+    color: rgb(0, 0, 0);
+}
+
+#dash .text .collapse::after{
+    content: "\e080";
+}
+
+@media only screen and (max-width: 1260px){
+    nav {
+        display: none;
+    }
 }
