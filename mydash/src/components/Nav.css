@@ -2,6 +2,10 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f8f8ff;
+}
+
 nav {
     height: 100%;
     width:280px;
@@ -11,9 +15,13 @@ nav {
 .position-fixed {
     top: 0;
     margin-left: 0%;
-    width: 235px;
     /* box-shadow: 0 0 25px 20px white; */
 }
+
+.hero .position-fixed{
+    width:270px;
+    box-shadow: -10px 1px 25px 20px white;
+} 
 
 a {
     text-decoration: none;
@@ -25,6 +33,8 @@ a {
 .component .text {
     color: #7678fb;
     background-color: #e4e5ff;
+    width: 250px;
+    justify-content: space-between;
 }
 
 .five{
@@ -45,7 +55,12 @@ a {
 }
 
 .icon {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+#angle {
+    transform: rotate(90deg);
+    font-weight: 700;
 }
 
 .drop-item:hover{
@@ -64,17 +79,6 @@ a {
     color: rgb(165, 165, 165);
     font-size: 8px;
     margin-bottom: 6.5px;
-}
-
-#dash .text::after{
-    font-family: 'Glyphicons Halflings';
-    content: \e114;
-    float:right;
-    color: rgb(0, 0, 0);
-}
-
-#dash .text .collapse::after{
-    content: "\e080";
 }
 
 @media only screen and (max-width: 1260px){

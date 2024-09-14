@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   function Menu() {
-    var x = document.getElementById("navbar");
+    let x = document.getElementById("navbar");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <div className="col-lg-10 float-end">
-        <div className="parent col-lg-11 d-flex flex-column float-end me-5">
-          <div className="rounded-3 p-3 d-flex bg-white border-0 justify-content-between shadow mb-1 m-4 mt-2 ">
+        <div className="parent col-lg-11 d-flex flex-column float-end me-3">
+          <div className="rounded-3 p-3 d-flex bg-white border-0 justify-content-between shadow-sm mb-1 mt-3 ">
             <div className="input w-25 ms-3">
               <input
                 className="bg-white border-0"
@@ -41,9 +41,9 @@ export default function Home() {
           </div>
 
           <section>
-            <div className="card m-4 border-0 shadow p-3 d-flex flex-row justify-content-between col-lg-8 col-md-12">
+            <div className="bg-white border-0 shadow p-3 d-flex flex-row justify-content-between col-lg-8 col-md-12 mt-3">
               <div className="text bg-white col-6">
-                <span className=" fs-4 text-primary bg-white ">
+                <span className=" fs-4 text-primary bg-white w-50">
                   Congratulations John! 🎉
                 </span>
                 <br />

@@ -26,10 +26,10 @@ import {
 export default function Nav() {
   return (
     <>
-      <nav className="shadow bg-white ps-3 position-fixed pe-1 m-0" id="navbar">
-        <div className="hero">
-          <div className="d-flex pt-3 pb-3 bg-white mb-5 position-fixed fs-2">
-            <div className="me-3 ps-2 text-primary">
+      <nav className="shadow bg-white position-fixed ps-2" id="navbar">
+        <div className="hero mb-1 bg-white">
+          <div className="d-flex pt-2 justify-content-center bg-white mb-3  position-fixed fs-2">
+            <div className="me-2 text-primary">
               <FontAwesomeIcon icon={faStaffSnake} />
             </div>
             sneat
@@ -37,22 +37,33 @@ export default function Nav() {
         </div>
         {/* ----------- Dashboard Accordion ------------- */}
         <div className="accordion" id="Navbar">
-          <div className="component mb-3 pt-5">
+          <div className="component mb-3 pt-2 mt-4">
             <button
+              onClick={() => {
+                let x = document.getElementById("angle");
+
+                if (x.style.transform == "rotate(0deg)") {
+                  x.style.transform = "rotate(90deg)";
+                } else {
+                  x.style.transform = "rotate(0deg)";
+                }
+              }}
               className="d-flex border-0 bg-white "
               data-bs-toggle="collapse"
               href="#dashboardCollapse"
               aria-controls="dashboardCollapse"
               id="dash"
             >
-              <div className="text d-flex align-items-center ps-1 pe-3 p-2 border-0 rounded-2">
-                <div className="icon me-3 ms-3">
-                  <FontAwesomeIcon icon={faHouse} />
+              <div className="text d-flex align-items-center mt-2 ps-1 p-2 border-0 rounded-2">
+                <div>
+                  <FontAwesomeIcon icon={faHouse} className="icon me-3 ms-2" />
+                  Dashboard
                 </div>
-                Dashboard
-                <span className="five bg-danger text-white ms-2">5</span>
-                <div className="arrow ms-3">
-                  <FontAwesomeIcon icon={faAngleRight} />
+                <div className="d-flex">
+                  <span className="five bg-danger text-white ms-2">5</span>
+                  <div id="angle" className="ms-2">
+                    <FontAwesomeIcon icon={faAngleRight} />
+                  </div>
                 </div>
               </div>
             </button>
@@ -364,7 +375,7 @@ export default function Nav() {
             </div>
           </div>
           {/* ----------------Components------------------ */}
-          <p className="mt-4 text-secondary bg-white text-uppercase">
+          <p className=" text-secondary bg-white text-uppercase">
             - Components
           </p>
           <a href="#" className="d-flex align-items-center">
