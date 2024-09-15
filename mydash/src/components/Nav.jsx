@@ -42,7 +42,7 @@ export default function Nav() {
               onClick={() => {
                 let x = document.getElementById("angle");
 
-                if (x.style.transform == "rotate(0deg)") {
+                if (x.style.transform === "rotate(0deg)") {
                   x.style.transform = "rotate(90deg)";
                 } else {
                   x.style.transform = "rotate(0deg)";
@@ -61,7 +61,7 @@ export default function Nav() {
                 </div>
                 <div className="d-flex">
                   <span className="five bg-danger text-white ms-2">5</span>
-                  <div id="angle" className="ms-2">
+                  <div id="angle" className="ms-2 me-1">
                     <FontAwesomeIcon icon={faAngleRight} />
                   </div>
                 </div>
