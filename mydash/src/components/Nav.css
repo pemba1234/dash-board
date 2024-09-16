@@ -1,16 +1,15 @@
-*{
+/* *{
     font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #f8f8ff;
-}
+    background-color: #fbf9fe;
+} */
 
 nav {
-    height: 100%;
     width:280px;
+    height: 100%; 
     overflow: auto;
-    transition: all ease 1s;
 }
 
 .position-fixed {
@@ -27,6 +26,10 @@ nav {
 a {
     text-decoration: none;
     color:black ;
+}
+
+Link {
+    text-decoration: none;
 }
 /* --------------Hero Main------------------- */
 
@@ -84,15 +87,7 @@ a {
 }
 
 @media only screen and (max-width: 1260px){
-    nav {
+    .show {
         display: none;
-        transition: all ease 1s;
-    }
-}
-
-@media only screen and (min-width: 1260px){
-    nav{
-        display: block;
-        transition:all ease 1s;
     }
 }

@@ -1,3 +1,7 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: rgb(234, 210, 253);
+    background-color: #f4edff;
 }

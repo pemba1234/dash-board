@@ -1,4 +1,6 @@
 import "./Nav.css";
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBorderAll,
@@ -26,7 +28,7 @@ import {
 export default function Nav() {
   return (
     <>
-      <nav className="shadow bg-white position-fixed ps-2" id="navbar">
+      <nav className="show shadow bg-white position-fixed ps-2" id="navbar">
         <div className="hero mb-1 bg-white">
           <div className="d-flex pt-2 justify-content-center bg-white mb-3  position-fixed fs-2">
             <div className="me-2 text-primary">
@@ -73,18 +75,18 @@ export default function Nav() {
               data-bs-parent="#Navbar"
             >
               <ul className="drop-menu d-flex flex-column">
-                <a className="drop-item d-flex ps-4 me-3 p-2" href="#">
+                <Link className="drop-item d-flex ps-4 me-3 p-2" to="/">
                   <div className="text-icon mt-1 me-4">
                     <FontAwesomeIcon icon={faCircle} className="fa-icon" />
                   </div>
                   Analytic
-                </a>
-                <a className="drop-item d-flex ps-4 me-3 p-2" href="#">
+                </Link>
+                <Link className="drop-item d-flex ps-4 me-3 p-2" to="/crm">
                   <div className="text-icon mt-1 me-4">
                     <FontAwesomeIcon icon={faCircle} className="fa-icon" />
                   </div>
                   CRM
-                </a>
+                </Link>
                 <a className="drop-item d-flex ps-4 me-3 p-2" href="#">
                   <div className="text-icon mt-1 me-4">
                     <FontAwesomeIcon icon={faCircle} className="fa-icon" />
