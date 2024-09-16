@@ -23,6 +23,7 @@ import {
   faTableCellsRowUnlock,
   faCircle,
   faAngleRight,
+  faCircleArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
@@ -628,6 +629,9 @@ export default function Nav() {
               </div>
               <div className="common-style">Datatables</div>
             </a>
+          </div>
+          <div className="side position-fixed float-end ">
+            <FontAwesomeIcon icon={faCircleArrowRight} />
           </div>
         </div>
       </nav>
