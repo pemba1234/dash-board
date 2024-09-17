@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <div className="col-lg-10 float-end">
-        <div className="parent col-lg-11 d-flex flex-column float-end me-3">
-          <div className="bg-white border-0 shadow p-3 d-flex flex-row justify-content-between col-lg-8 col-md-12 mt-3">
+        <div className="parent col-lg-11 d-flex flex-column float-end me-3 mt-3">
+          <div className="bg-white border-0 shadow p-3 d-flex flex-row justify-content-between col-lg-8 col-md-12">
             <div className="text bg-white col-6">
               <span className=" fs-4 text-primary bg-white w-50">
                 Congratulations John! 🎉

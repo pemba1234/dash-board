@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import Hero from "./pages/HeroDash";
 import Crm from "./pages/Crm";
 import Nav from "./components/Nav";
+import Search from "./components/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Router>
         <Nav />
+        <Search />
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/crm" element={<Crm />} />
