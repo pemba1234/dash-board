@@ -1,25 +1,22 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle";
-import Hero from "./pages/HeroDash";
-import Crm from "./pages/Crm";
-import Nav from "./components/Nav";
-import Search from "./components/Search";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+import Card from './Component/Cards/Card'
+import Footer from './Component/Footer/Footer';
+
+
+
 
 function App() {
+ 
+
   return (
     <>
-      <Router>
-        <Nav />
-        <Search />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/crm" element={<Crm />} />
-        </Routes>
-      </Router>
+     <Card/>
+     <Footer/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
