@@ -2,6 +2,14 @@
     height: 180px;
 }
 
-#column1 {
-    height: auto;
+
+
+@media only screen and (max-width: 1000px){
+    #column {
+        height: 200px;
+    }
+
+    #column1 {
+        height:200px;
+    }
 }
