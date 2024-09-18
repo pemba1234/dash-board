@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import Card from './Component/Cards/Card'
-import Footer from './Component/Footer/Footer';
+import Card from './components/Cards/Card'
+import Footer from './components/Footer/Footer';
 
 
 

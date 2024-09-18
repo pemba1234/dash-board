@@ -15,7 +15,16 @@ nav {
 #navbar {
     top: 0;
     margin-left: 0%;
-    /* box-shadow: 0 0 25px 20px white; */
+    z-index: 1000;
+    box-shadow: 0 0 25px 20px white;
+}
+
+.hero {
+    z-index:1000 ;
+}
+  
+#angle {
+    z-index: 999;
 }
 
 
@@ -64,6 +73,7 @@ a {
 #angle {
     transform: rotate(90deg);
     font-weight: 700;
+    z-index: 999;
     transition: all ease 0.5s;
 }
 
