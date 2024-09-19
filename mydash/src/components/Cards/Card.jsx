@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBusinessTime, faClosedCaptioning, faDollarSign, faEllipsisVertical,faEnvelope,faFutbol,faHouse,faMagnifyingGlass, faMobileScreen, faWallet,} from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/logo.jpg";
-import man from "../../assets/man.jpg"
+import man from "../../assets/man.jpg";
 
 import "./Card.css";
 
