@@ -1,22 +1,15 @@
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import Card from './components/Cards/Card'
-import Footer from './components/Footer/Footer';
-
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Card from "./components/Cards/Card";
+import Footer from "./components/Footer/Footer";
 
 function App() {
- 
-
   return (
     <>
-     <Card/>
-     <Footer/>
+      <Card />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
